@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>siralexeu — projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0e0e0e;
+      --surface: #161616;
+      --border: #222;
+      --text: #e8e8e8;
+      --muted: #555;
+      --accent: #e8e8e8;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 380px;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+    }
+
+    .name {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--text);
+    }
+
+    .sub {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.3rem;
+      letter-spacing: 0.02em;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    a.project {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    a.project:hover {
+      border-color: #444;
+      background: #1a1a1a;
+    }
+
+    a.project:hover .arrow {
+      opacity: 1;
+      transform: translateX(2px);
+    }
+
+    .arrow {
+      opacity: 0.25;
+      font-size: 0.75rem;
+      transition: opacity 0.15s, transform 0.15s;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="name">siralexeu</div>
+      <div class="sub">projects</div>
+    </header>
+
+    <div class="projects">
+      <a class="project" href="https://mygamelist.up.railway.app/" target="_blank" rel="noopener">
+        MyGameList <span class="arrow">↗</span>
+      </a>
+      <a class="project" href="https://citadinconsulting.netlify.app/" target="_blank" rel="noopener">
+        Citadin Consulting <span class="arrow">↗</span>
+      </a>
+      <a class="project" href="https://jocuri-ieftine.lovable.app/" target="_blank" rel="noopener">
+        Jocuri Ieftine <span class="arrow">↗</span>
+      </a>
+      <a class="project" href="https://cs-skins.lovable.app/" target="_blank" rel="noopener">
+        CS2 Skins <span class="arrow">↗</span>
+      </a>
+      <a class="project" href="https://clash-royale-decks.lovable.app/" target="_blank" rel="noopener">
+        Clash Royale Deck Builder <span class="arrow">↗</span>
+      </a>
+    </div>
+
+    <footer>github.com/siralexeu</footer>
+  </div>
+</body>
+</html>
