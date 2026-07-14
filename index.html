@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --bg: #0e0e0e;
       --surface: #161616;
@@ -18,7 +17,6 @@
       --muted: #555;
       --accent: #e8e8e8;
     }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -30,36 +28,30 @@
       justify-content: center;
       padding: 2rem 1rem;
     }
-
     .container {
       width: 100%;
       max-width: 380px;
     }
-
     header {
       margin-bottom: 2.5rem;
     }
-
     .name {
       font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.04em;
       color: var(--text);
     }
-
     .sub {
       font-size: 0.75rem;
       color: var(--muted);
       margin-top: 0.3rem;
       letter-spacing: 0.02em;
     }
-
     .projects {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
     }
-
     a.project {
       display: flex;
       align-items: center;
@@ -74,24 +66,35 @@
       font-weight: 400;
       letter-spacing: 0.01em;
       transition: border-color 0.15s, background 0.15s;
+      gap: 0.75rem;
     }
-
     a.project:hover {
       border-color: #444;
       background: #1a1a1a;
     }
-
     a.project:hover .arrow {
       opacity: 1;
       transform: translateX(2px);
     }
-
+    .proj-text {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      column-gap: 0.4rem;
+      row-gap: 0.1rem;
+    }
+    .desc {
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--muted);
+      letter-spacing: 0;
+    }
     .arrow {
       opacity: 0.25;
       font-size: 0.75rem;
       transition: opacity 0.15s, transform 0.15s;
+      flex-shrink: 0;
     }
-
     footer {
       margin-top: 2.5rem;
       font-size: 0.7rem;
@@ -106,28 +109,32 @@
       <div class="name">siralexeu</div>
       <div class="sub">projects</div>
     </header>
-
     <div class="projects">
       <a class="project" href="https://mygamelist.up.railway.app/" target="_blank" rel="noopener">
-        MyGameList <span class="arrow">↗</span>
+        <span class="proj-text">MyGameList <span class="desc">video game collection tracker</span></span>
+        <span class="arrow">↗</span>
       </a>
       <a class="project" href="https://citadinconsulting.netlify.app/" target="_blank" rel="noopener">
-        Citadin Consulting <span class="arrow">↗</span>
+        <span class="proj-text">Citadin Consulting <span class="desc">accounting & HR firm website</span></span>
+        <span class="arrow">↗</span>
       </a>
       <a class="project" href="https://jocuri-ieftine.lovable.app/" target="_blank" rel="noopener">
-        Jocuri Ieftine <span class="arrow">↗</span>
+        <span class="proj-text">Jocuri Ieftine <span class="desc">cheap Steam key finder</span></span>
+        <span class="arrow">↗</span>
       </a>
       <a class="project" href="https://cs-skins.lovable.app/" target="_blank" rel="noopener">
-        CS2 Skins <span class="arrow">↗</span>
+        <span class="proj-text">CS2 Skins <span class="desc">CS2 skin marketplace directory</span></span>
+        <span class="arrow">↗</span>
       </a>
       <a class="project" href="https://clash-royale-decks.lovable.app/" target="_blank" rel="noopener">
-        Clash Royale Deck Builder <span class="arrow">↗</span>
+        <span class="proj-text">Clash Royale Deck Builder</span>
+        <span class="arrow">↗</span>
       </a>
       <a class="project" href="https://night-shift-heist.base44.app/" target="_blank" rel="noopener">
-        Night Shift (mini-game) <span class="arrow">↗</span>
+        <span class="proj-text">Night Shift (mini-game)</span>
+        <span class="arrow">↗</span>
       </a>
     </div>
-
     <footer>github.com/siralexeu</footer>
   </div>
 </body>
